@@ -1,0 +1,30 @@
+form{
+    width: 85%; /*largura de 85% seguir o padrao das outras paginas*/
+    margin: 2rem auto 0 auto; /* 2rem parte de cima*/
+    text-align: center;
+}
+
+.data-finalizar{
+    text-align: start;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600; /*peso da fonte*/
+    margin-bottom: 3rem; /*afastar da parte de baixo*/
+    color: rgb(99, 95, 95);
+}
+
+.form{
+    width: 100%;
+
+}
+.buttons{
+    width: 100%;
+
+}
+button{
+    margin-right: .5rem;/*espaco em botoes*/
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
