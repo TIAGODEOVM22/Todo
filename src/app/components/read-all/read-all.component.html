@@ -1,6 +1,6 @@
 <div class="container">
   <div class="badge">
-    <button (click)= "navegarParaFinalizados()" color="primary" matBadge="{{closed}}">Tasks Finalizadas</button>
+    <button (click)= "navegarParaFinalizados()" mat-stroked-button color="primary" matBadge="{{closed}}">Tasks Finalizadas</button>
 
   </div>
 
@@ -20,7 +20,7 @@
           <mat-icon>done</mat-icon>
         </button>
 
-        <button mat-mini-fab color="accent">
+        <button  routerLink= "update/{{ item.id }}" mat-mini-fab color="accent">
           <mat-icon>edit</mat-icon>
         </button>
 

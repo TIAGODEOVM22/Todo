@@ -17,11 +17,22 @@ export class TodoService {
   findAll(): Observable<Todo[]>{
     return this.http.get<Todo[]>(this.baseUrl);
   }
-  
+
+  findById(id: any): Observable<Todo>{
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Todo>(url);
+  } 
+
+  create(todo: Todo):Observable<Todo>{
+    return this.http.post<Todo>(this.baseUrl, todo);
+
+  }
+
   delete(id: any) : Observable <void>{
     const url = `${this.baseUrl}/${id}`; /*cria url localhost + todos/id do backend*/
     return this.http.delete<void>(url);
   }
+
   message(msg: String): void{
     this.snack.open(`${msg}`, 'OK',{
       horizontalPosition: 'end',
